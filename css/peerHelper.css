@@ -1,0 +1,25 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.body-left-side {
+	padding-top: 10px;
+	width: 50%;
+}
+
+.body-right-side {
+	padding-top: 10px;
+	width: 50%;
+}
+
+.panel-heading {
+	background-color: red;
+}
+.panel-title {
+	/*background-color: red;*/
+	/*color: blue;*/
+}

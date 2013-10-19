@@ -1,145 +1,90 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Peer Helper</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-	<script src="javascript.js"></script>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Peer Helper tool">
+    <meta name="author" content="Kevin Rosengren">
 
-<body>
-<div class="container">
-	<div id="toolbar">
-		<table>
-			<tr>
-				<td align="left">Peer Helper</td>
-				<td align="right"><input type="text" name="search" id="searchbar"></td>
-			</tr>
-		</table>
-	</div>
-	<div id="head">
-		<div id="rounded-corners">
-			<div class="list" id="accordion">
-				<h3>Git</h3>
-				<div>
-					Filler
-				</div>
-				<h3>JavaScript</h3>
-				<div>
-					Filler
-				</div>
-				<h3>PHP Database</h3>
-				<div>
-					Filler
-				</div>
-				<h3>JIRA</h3>
-				<div>
-					Filler
-				</div>
-				<h3>eForge</h3>
-				<div>
-					Filler
-				</div>
-				<h3>jQuery</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Jenkins</h3>
-				<div>
-					Filler
-				</div>
-				<h3>LTE</h3>
-				<div>
-					Filler
-				</div>
-				<h3>VPN</h3>
-				<div>
-					Filler
-				</div>
-				<h3>MHWeb</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Trouble Report</h3>
-				<div>
-					Filler
-				</div>
-				<h3>HTML/CSS</h3>
-				<div>
-					Filler
-				</div>
-				<h3>GORDON ORDER</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Working from Home</h3>
-				<div>
-					Filler
-				</div>
-				<h3>TimeSheer</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Ericsson Internal</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Place Holder</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Place Holder</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Place Holder</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Place Holder</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Place Holder</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Place Holder</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Place Holder</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Place Holder</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Place Holder</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Place Holder</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Place Holder</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Place Holder</h3>
-				<div>
-					Filler
-				</div>
-				<h3>Place Holder</h3>
-				<div>
-					Filler
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-</body>
+    <title>Peer Helper</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/peerHelper.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">
+          <div class="list-group">
+            <a href="#" class="list-group-item">Stuff and Things</a>
+            <a href="#" class="list-group-item">Stuff and Things</a>
+            <a href="#" class="list-group-item">Stuff and Things</a>
+            <a href="#" class="list-group-item">Stuff and Things</a>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Peer Helper</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    <div class="starter-template">
+      <!-- <h1>Peer Helper Tool</h1> -->
+      <!-- <p class="lead">Get help, Become a Helper</p> -->
+      <div class="body-left-side">
+        <div class="panel-group" id="accordion">
+        <div class="list-group">
+        <script type="text/javascript">
+          var listOfSkills = [ 'Working with Git', 'PHP', 'JIRA', 'eForge', 'jQuery', 'Jenkins', 'LTE', 
+                        'VPN', 'MHWeb', 'Trouble', 'HTML', 'GORDON', 'Working', 'TimeSheer', 'Ericsson']
+
+          for (var i=0;i<12;i++)
+          { 
+            document.write('<a data-toggle="modal" href="#myModal" class="list-group-item">Dapibus ac facilisis in</a>');
+            document.write('<a data-toggle="modal" href="#myModal" class="list-group-item">Morbi leo risus</a>');
+            document.write('<a data-toggle="modal" href="#myModal" class="list-group-item">Porta ac consectetur ac</a>');
+            document.write('<a data-toggle="modal" href="#myModal" class="list-group-item">Vestibulum at eros</a>');
+          }
+        </script>
+        </div>
+        </div>
+      </div>
+    </div>
+      <div class="body-right-side">
+      </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
